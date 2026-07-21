@@ -7,7 +7,6 @@ body {
   font-family: "Segoe UI", sans-serif;
   color: #1e1b4b;
   background: #f0f0f0;
-  padding: 50px 25px;
 }
 a {
   text-decoration: none;
@@ -16,13 +15,12 @@ a {
 ul {
   list-style: none;
 }
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background: #ffffff;
-  text-shadow: 0 2px 4px red;
 }
 .logo {
   height: 40px;
@@ -39,8 +37,8 @@ ul {
   font-weight: 500;
   text-decoration: none;
 }
-.nav-links:hover {
-  background-color: #be30b99e;
+.nav-links a:hover {
+  background-color: #4f46e5;
 }
 .btn-outline {
   outline-style: solid;
@@ -109,4 +107,13 @@ ul {
   font-size: smaller;
   color: #444;
   margin-top: 30px;
+}
+.hero-right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 100%;
+  box-shadow: #000000;
 }
