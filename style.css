@@ -204,3 +204,66 @@ font-weight: 700;
   font-size: 15px;
 }
 /*How it works section*/
+ .how-it-works{
+  background:#F8FAFC;
+  padding: 80px 24px;
+ }
+   .how-it-work-header{
+    text-align: center;
+    margin-bottom: 50px;
+    & h2{
+      font-size: 36px;
+      font-weight: 700;
+      color: #1E1B4B;
+      margin-bottom: 12px;
+    }
+    & p{
+      font-size:16px ;
+      color: #64748b;
+    }
+ }
+ .steps-container{
+  display: flex;
+  margin:0 auto;
+  justify-content: center;
+  gap:30px;
+  max-width: 100px;
+  flex-wrap: nowrap
+  align-items:flex-start;
+ }
+ .step-card{
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  box-shadow: 0 4px 2px rgba(0,0,0,0.15);
+  & h3{
+    font-size: 20px;
+font-weight: 800;
+color: #1E1B4B;
+margin-bottom: 12px;
+  }
+& p{
+  line-height: 1.7;
+  font-size: 15px;
+  color: #64748b;
+}
+  
+}
+ .step-number{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin:0 auto;
+  margin-bottom: 20px;
+
+}
