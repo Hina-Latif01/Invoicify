@@ -330,3 +330,37 @@ margin-bottom: 12px;
     font-size: small;
   }
 }
+.cta-section{
+  background-color: purple;
+  padding: 80px 24px;
+  text-align: center;
+   & h2{
+font-size:36px ;
+font-weight: 800;
+margin-bottom: 12px;
+   color: white;
+}
+& p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color:rgba(255,255,255,0.8);
+  font-size:16px ;
+  margin-bottom: 20px;
+}
+& a{
+  background-color: white;
+  color: purple;
+  padding: 14px 32px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: large;
+}
+  & a:hover{
+    background-color: #5d88b3;
+  }
+  }
+
+  
