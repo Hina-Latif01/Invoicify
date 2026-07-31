@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>clients-invoicify</title>
+    <title>iinvoices invoicify</title>
   </head>
   <body class="dashboard-body">
     <aside class="sidebar">
-      <div class="sidebar-logo"> 
+      <div class="sidebar-logo">
         <a href="index.html">
           <img src="logo.png.jpeg" alt="invoicify logo" />
         </a>
@@ -28,41 +28,51 @@
     </aside>
     <main class="dashboard-main">
       <div class="class topbar">
-        <h2>My Clients</h2>
-        <a href="#">Add new Clients</a>
+        <h2>Invoices</h2>
+        <a href="create-invoices.html">Create Invoices</a>
       </div>
-      <div class="Clients-section">
+      <div class="filter-bar">
+        <a href="#">All</a>
+        <a href="#">Paid</a>
+        <a href="#">Unpaid</a>
+        <a href="#">Overdue</a>
+      </div>
+      <div class="invoices-section">
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Total Invoices</th>
+              <th>Invoice#</th>
+              <th>Client Name</th>
+              <th>Amount</th>
+              <th>Due Date</th>
+              <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td>#INV-001</td>
               <td>Sara Khan</td>
-              <td>sara@gmail.com</td>
-              <td>0370-4365513</td>
-              <td>3 invoices</td>
-               <td><a href="#">Edit/Delete</a></td></td>
+              <td>$1,200</td>
+              <td>01-Aug,2026</td>
+              <td>Paid</td>
+              <td><a href="#">View/Delete</a></td>
             </tr>
             <tr>
+              <td>#INV-002</td>
               <td>John Ahmad</td>
-              <td>john@gmail.com</td>
-              <td>0311-7654133</td>
-              <td>2 invoices</td>
-              <td><a href="#">Edit/Delete</a></td>
+              <td>$800</td>
+              <td>10-Aug,2026</td>
+              <td>pending</td>
+              <td><a href="#">View/Delete</a></td>
             </tr>
             <tr>
+              <td>"INV-003"</td>
               <td>Rita Malik</td>
-              <td>rita@gmail.com</td>
-              <td>0322-9876543</td>
-              <td>1 invoices</td>
-              <td><a href="#">Edit/Delete</a></td>
+              <td>$1,500</td>
+              <td>15-Aug,2026</td>
+              <td>overdue</td>
+              <td><a href="#">View/Delete</a></td>
             </tr>
           </tbody>
         </table>
