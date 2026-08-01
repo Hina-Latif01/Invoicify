@@ -460,7 +460,7 @@ button{
 .sidebar{
   width: 240px;
   min-height: 100vh;
-  background-color: #1E1B4B;
+  background-color: #334155;
   padding: 24px;
   position: fixed;
   & nav ul{
@@ -482,8 +482,8 @@ button{
 .sidebar-logout{
   margin-top: 40px;
   & a{
-    color: white;
-    opacity: 0.1;
+    color: #e5e7eb;;
+   opacity: 1;
   }
 }
 .dashboard-main{
