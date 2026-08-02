@@ -405,6 +405,7 @@ color: white;
       justify-content: space-between;
     }
    }
+   /*login.html*/
    .login-section{
     background-color: #F1F5FF;
     min-height: 100vh;
@@ -435,7 +436,7 @@ color: white;
 label{
   display: block;
   margin-bottom: 6px;
-  font-weight: 600;
+  font-weight: bold;
   color:#1E1B4B;
 }
 input{
@@ -454,6 +455,7 @@ button{
     width:100%;
   }
 }
+/*dashboard.html*/
 .dashboard-body{
   display: flex;
 }
@@ -563,6 +565,7 @@ tr{
   color:#1E1B4B;
   border-bottom: 1px solid #F1F5F9;
 }
+/*invoices.html*/ 
 .filter-bar{
   display: flex;
   text-align: center;
