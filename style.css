@@ -44,7 +44,7 @@ nav {
   color: #ffffff;
   padding: 8px 20px;
   border-radius: 8px;
-  border: 2px solid #4f46e5;
+  border: 2px solid black;
 }
 .btn-outline:hover {
   background-color: #ff00ff70;
@@ -55,13 +55,13 @@ nav {
   border: none;
   border-radius: 8px;
   padding: 8px 20px;
-  border: 2px solid #4f46e5;
+  border: 2px solid black;
 }
 .btn-primary:hover {
   background-color: #ff00ff70;
 }
 .hero-section {
-  background-color: #999;
+  background: linear-gradient();
   padding: 10px 10px 10px 10px;
 }
 .hero-content {
@@ -76,19 +76,23 @@ nav {
 .hero-badge {
   background-color: #4f46e5;
   color: #000000;
-  padding: 10px 30px 10px 30px;
+  padding: 6px 16px;
   border-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
   text-align: center;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   justify-content: center;
-  padding: 1px 2px;
+  align-items: center;
+  height: 40px;
+
+  border-radius: 20px;
 }
 .h1 {
   font-size: larger;
   color: #656569;
   line-height: 5px;
-   font-weight: 800;
+   font-weight: bold;
   margin-bottom: 10px;
 }
 .p {
@@ -136,11 +140,14 @@ nav {
 }
 .status-items {
   text-align: center;
+  padding: 20px 0;
+;
 }
 .status-items h3 {
   font-size: 40px;
   font-weight: 800;
   color: #4f46e5;
+  background-color: #F8FAFC;
 }
 .status-items p {
   font-size: 14px;
@@ -274,7 +281,7 @@ margin-bottom: 12px;
 .testimonials-section{
   background-color: #999;
   padding:80px 24px ;
-}
+} 
 .testimonials-header{
   text-align: center;
   margin-bottom: 50px;
