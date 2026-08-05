@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Invoice</title>
+  </head>
+  <body class="dashboard-body">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <a href="index.html">
+          <img src="logo.png.jpeg" alt="invoicify logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dasboard</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="invoices.html">Invoices</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-logout">
+        <a href="#">Logout</a>
+      </div>
+    </aside>
+    <main class="dashboard-main">
+      <div class="class topbar">
+        <h2>Create new Invoice</h2>
+      </div>
+      <div class="invoice-form">
+        <form>
+          <select>
+            <option value="">Select Client</option>
+            <option value="client1">Client 1</option>
+            <option value="client2">Client 2</option>
+            <option value="client3">Client 3</option>
+          </select>
+      </div>
+          <div class="invoice-form">
+            <label>Invoice Number</label>
+            <input type="text" placeholder="Enter Invoice Number" />
+          </div>
+          <div class="invoice-form">
+            <label>Date</label>
+            <input type="date" />
+          </div>
+      <div class="invoice-form">
+            <label>Due Date</label>
+            <input type="date" />
+          </div>
+        </form>
+        <div class="invoice-items">
+          <h3>Invoice Items</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="text" placeholder="Item Description" /></td>
+                <td><input type="number" placeholder="Quantity" /></td>
+                <td><input type="number" placeholder="Unit Price" /></td>
+                <td>$0.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn-primary">Add Item</button>
+        </div>
+        <div class="invoice-summary">
+          <h3>Invoice Summary</h3>
+          <p>Subtotal: $0.00</p>
+          <p>Tax: $0.00</p>
+          <p>Total: $0.00</p>
+        </div>
+          <button type="submit" class="btn-primary">Save Invoice</button>
+          <button type="submit" class="btn-outline"><a href="invoices.html">Cancel</a></button>
+     </div>
+    </main>
+  </body>
+</html>

@@ -131,7 +131,7 @@ nav {
   border-bottom: 1px solid #e2e8f0;
 }
 .stats-container {
-  display: flex;
+  display: flex; 
   flex:1;
   justify-content: center;
   gap: 80px;
