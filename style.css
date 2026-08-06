@@ -36,29 +36,39 @@ nav {
   background-color: #ffffff;
   padding: 16px 24px;
 }
+.nav-links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
 .nav-links a:hover {
-  background-color: #4f46e5;
+  background-color:#4f46e5;
 }
 .btn-outline {
-  background-color: #4f46e5;
-  color: #ffffff;
+  background-color: white;
+  color: black;
   padding: 8px 20px;
   border-radius: 8px;
   border: 2px solid black;
+  gap:25px; 
+  margin-left: 30px;
+  flex-wrap: wrap;
 }
 .btn-outline:hover {
-  background-color: #ff00ff70;
+  background-color: #4f46e5;
 }
 .btn-primary {
-  background-color: #4f46e5;
-  color: white;
-  border: none;
+  background-color: white;
+  color: black;
   border-radius: 8px;
   padding: 8px 20px;
   border: 2px solid black;
+  gap:25px;
 }
 .btn-primary:hover {
-  background-color: #ff00ff70;
+  background-color: #4f46e5;
 }
 .hero-section {
   background: linear-gradient();
