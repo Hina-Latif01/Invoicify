@@ -608,6 +608,7 @@ tr{
   font-weight: bold;
   gap:20px;
 }
+/*Responsive Design for mobile*/
 @media (max-width:600px) {
   header{
     padding:15px;
@@ -684,5 +685,49 @@ tr{
     flex-direction: column;
     gap: 15px;
     text-align: center;
+  }
+}
+/*Responsive Design for tablets*/
+@media(max-width:900px) {
+  header{
+    padding: 15px 20px;
+  }
+  nav{
+    width: 100%;
+  }
+  .nav-links ul {
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+  .buttons{
+    gap: 15px;
+  }
+  .btn-outline, .btn-primary{
+    padding: 8px 16px;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left, .hero-right {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero-right img {
+    width: 100%;
+    height: auto;
+  }
+  .stats-container {
+    gap: 40px;
+  }
+  .features-grid, .testimonials-grid, .steps-container {
+    flex-wrap: wrap;
+  }
+  .feature-card, .testimonial-card, .step-card {
+    max-width: 45%;
+  }
+  .footer-top {
+    flex-wrap: wrap ;
+    gap: 30px;
   }
 }
