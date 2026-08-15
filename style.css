@@ -21,6 +21,9 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .logo {
   width: 40px;
@@ -30,6 +33,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 nav {
   background-color: #ffffff;
@@ -704,7 +708,7 @@ tr{
   }
   .btn-outline, .btn-primary{
     padding: 8px 16px;
-  }
+  } 
   .hero-content {
     flex-direction: column;
     text-align: center;
