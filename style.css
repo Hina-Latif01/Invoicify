@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #ffffff;
+  background:#ffffff;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -29,7 +29,7 @@ header {
   width: 40px;
   height: 30px;
   border-radius: 40px;
-  background:#ffffff;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,7 +362,7 @@ margin-bottom: 12px;
   }
 }
 .cta-section{
-  background-color: #1E3A84;
+  background-color: #B5BBC9;
   padding: 80px 24px;
   text-align: center;
    & h2{
@@ -390,11 +390,11 @@ margin-bottom: 12px;
   font-size: large;
 }
   & a:hover{
-    background-color: #5d88b3;
+    background-color: #D6E6F2;
   }
   }
   .footer{
-background-color: #172554;
+background-color: #585E6C;
 padding: 10px 24px;
 color: white;
   }
@@ -413,7 +413,7 @@ color: white;
       font-size: 36px;
     }
     & a{
-      color: #706ca3;
+      color: white;
     display: block;
       margin-bottom: 12px;
       margin-left: 12px;
