@@ -566,6 +566,14 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-bottom: 30px;
+& a{
+  background-color: #4f46e5;
+}
+& h2{
+  font-size:24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
   }
   .profile-icon{
     width: 40px;
@@ -631,7 +639,7 @@ table{
 }
 th{
   text-align: left;
-  padding: 12px;
+  padding: 10px 15px;
   font-size: 13px;
   color: #000000;
   border-bottom: 1px solid #E2E8F0;
@@ -641,7 +649,10 @@ tr{
   padding: 12px;
   font-size: 14px;
   color:#1E1B4B;
-  border-bottom: 1px solid #F1F5F9;
+  border-bottom: 1px solid #e5e7eb;
+}
+td{
+  padding:10px 15px;
 }
 .status{
   padding:5px 10px;
