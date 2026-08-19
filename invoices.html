@@ -32,10 +32,10 @@
         <a href="create-invoice.html">Create Invoices</a>
       </div>
       <div class="filter-bar">
-        <a href="#">All</a>
-        <a href="#">Paid</a>
-        <a href="#">Unpaid</a>
-        <a href="#">Overdue</a>
+        <a href="#">All |</a>
+        <a href="#">Paid |</a>
+        <a href="#">Unpaid |</a>
+        <a href="#">Overdue </a>
       </div>
       <div class="invoices-section">
         <table>
@@ -55,7 +55,7 @@
               <td>Sara Khan</td>
               <td>$1,200</td>
               <td>01-Aug,2026</td>
-              <td>Paid</td>
+              <td><span class="status paid">paid</span></td>
               <td><a href="#">View/Delete</a></td>
             </tr>
             <tr>
@@ -63,15 +63,15 @@
               <td>John Ahmad</td>
               <td>$800</td>
               <td>10-Aug,2026</td>
-              <td>pending</td>
+              <td><span class="status pending">pending</span></td>
               <td><a href="#">View/Delete</a></td>
             </tr>
             <tr>
-              <td>"INV-003"</td>
+              <td>#INV-003</td>
               <td>Rita Malik</td>
               <td>$1,500</td>
               <td>15-Aug,2026</td>
-              <td>overdue</td>
+              <td><span class="status overdue">overdue</span></td>
               <td><a href="#">View/Delete</a></td>
             </tr>
           </tbody>
