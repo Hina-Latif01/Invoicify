@@ -479,7 +479,7 @@ color: white;
 }
 label{
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-weight: bold;
   color:#1E1B4B;
 }
@@ -489,11 +489,15 @@ input{
   width:100%;
   padding: 12px;
   border: 1px solid #E2E8F0;
-  box-sizing: 20px;
-  border-radius: 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
   font-size: 15px;
   border: 2px solid #4f46e5;
   color:#000000;
+  input:focus{
+    border-color: #3b82f6;
+    outline:none;
+  }
   & a{
     transition: 0.3s ease;
   }
@@ -502,9 +506,16 @@ button{
   width:100%;
   & .btn-primary{
     width:100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
   }
   & a{
     transition: 0.3s ease;
+  }
+  .btn-outline{
+    width:100%;
   }
 }
 /*dashboard.html*/
@@ -557,6 +568,8 @@ button{
   background-color: #F8FAFC;
   min-height: 100vh;
   flex:1;
+  border-radius: 12px;
+  box-shadow: 1px solid #585E6C;
 }
 .sidebar-logo img{
   height: 40px;
@@ -572,9 +585,10 @@ margin-bottom: 30px;
   border: 100vh;
 }
 & h2{
-  font-size:24px;
-  font-weight: 600;
+  font-size:28px;
+  font-weight: 700;
   margin-bottom: 25px;
+  color:#0f1720;
 }
   }
   .profile-icon{
@@ -686,6 +700,14 @@ td{
   border-bottom: 1px solid #E2E8F0;
   font-weight: bold;
   gap:20px;
+/*settings.html*/
+.profile-section, .business-section, .password-section{
+  background: #fff;
+  padding:25px;
+  margin-bottom: 25px;
+  border-radius:10px;
+}
+
 }
 /*Responsive Design for mobile*/
 @media (max-width:600px) {
