@@ -854,6 +854,65 @@ td{
   }
   .nav-logo img{
     width:120px;
-    height:auto
+    height:auto 
+  }
+}
+/*add responsive design for mobile in setting page*/
+@media(max-width:600px){
+  .dashboard-body{
+    display: block;
+  }
+  .sidebar{
+    width:100%;
+    min-height: auto;
+    padding:15px 10px;
+    box-sizing: border-box;
+  }
+  .sidebar-logo{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  sidebar nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:8px;
+    padding: 0;
+    margin:0;
+    list-style: none;
+  }
+  .sidebar nav ul li{
+    margin: 0;
+  }
+  .sidebar nav ul li a{
+    padding: 8px 10px;
+    display: block;
+    font-size: 14px;
+  }
+  .sidebar-logout{
+    margin-top: 15px;
+    text-align: center;
+  }
+  .dashboard-main{
+    width: 100%;
+    padding:15px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .profile-section, .password-section, .business-section{
+    width:100%;
+    padding: 15px;
+    margin-bottom:15px;
+    box-sizing: border-box;
+  }
+  .form-group input{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+  }
+  .btn-primary{
+    width:100%;
+    padding:10px;
   }
 }
