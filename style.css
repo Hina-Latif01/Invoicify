@@ -102,18 +102,19 @@ margin-left: 30px;
   display: inline-block;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 30px;
 
   border-radius: 20px;
 }
-.h1 {
+h1 {
   font-size: larger;
   color: #656569;
   line-height: 5px;
    font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
-.p {
+p {
   font-size: large;
   color: #656569;
   line-height: 50px;
@@ -131,7 +132,7 @@ margin-left: 30px;
 .Trust-text {
   font-size: smaller;
   color: #444;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .hero-right {
   display: flex;
@@ -536,7 +537,7 @@ button{
     margin-bottom: 16px;
   }
   & nav ul li a{
-    color: wite;
+    color: black;
     font-size: 15px;
     opacity: 0.7;
   }
@@ -708,24 +709,24 @@ td{
   border-radius:10px;
 } 
 }
-/*Responsive Design for mobile*/
-@media (max-width:600px) {
+/*Responsive Design of landing page for mobile*/
+@media (max-width:768px) {
   header{
     padding:15px;
   }
    nav{
-    display :flex;
-    flex-direction: column;
-    gap:20px;
+    width: 100%;
    }
    .logo{
     margin-left:0 auto;
   }
   .nav-links ul {
     flex-direction: column;
-    padding:10px;
+    padding:10px 0px;
     gap: 15px;
     margin-bottom: 0;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .buttons{
     display: flex;
@@ -733,186 +734,101 @@ td{
   }
   .btn-outline, .btn-primary{
     margin-left: 0;
-    padding:8px 14px;
+    padding:8px 12px;
     }
-    .hero-section{
-      padding:40px 20px;
-    }
+    /*hero-section*/
   .hero-content {
     flex-direction: column;
+    text-align: center;
     gap:30px;
   }
-  .hero-left h1{
-    font-size: 32px;
-    line-height: 1.6;
+  .hero-left{
+width:100%;
   }
-  .hero-left p{
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  .hero-badge{
-    font-size: 12px;
-    padding: 4px 12px;
-    height:auto;
+  .hero-right{
+  width:100%;
   }
   .hero-right img{
-    width: 100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
   }
+  /*stats*/
   .stats-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
-  .features-grid, .testimonials-grid, .steps-container {
+  /*features*/
+  .features-grid{
     flex-direction: column;
     align-items:center;
   }
-  .features-section, .testimonials-section, .how-it-works, .cta-section {
-    padding: 50px 20px;
-  }
-  .features-header h2, .testimonials-header h2, .how-it-work-header h2, .cta-section h2 {
-    font-size: 28px;
-  }
-  .feature-card, .testimonial-card, .step-card {
-    max-width: 100%;
+  .feature-card{
+    width: 100%;
     max-width: 100%;
   }
+  /*how it works*/
+  .steps-container{
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    gap:20px;
+  }
+  .step-card{
+    width:100%;
+    max-width: 100%;
+  }
+  /*testimonials*/
+  .testimonials-grid{
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial-card{
+    width:100%;
+    max-width: 100%;
+  }
+  /*footer*/
   .footer-top {
     flex-direction: column;
     gap:30px;
   }
   .footer-bottom{
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     text-align: center;
   }
-}
-/*Responsive Design for tablets*/
-@media(max-width:900px) {
-  header{
-    padding: 15px 20px;
-  }
-  nav{
-    width: 100%;
-  }
-  .nav-links ul {
-    gap: 25px;
-    margin-bottom: 20px;
-  }
-  .buttons{
-    gap: 15px;
-  }
-  .btn-outline, .btn-primary{
-    padding: 8px 16px;
-  } 
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-left, .hero-right {
-    width: 100%;
-    max-width: 100%;
-  }
-  .hero-right img {
-    width: 100%;
-    height: auto;
-  }
-  .stats-container {
-    gap: 40px;
-  }
-  .features-grid, .testimonials-grid, .steps-container {
-    flex-wrap: wrap;
-  }
-  .feature-card, .testimonial-card, .step-card {
-    max-width: 45%;
-  }
-  .footer-top {
-    flex-wrap: wrap ;
-    gap: 30px;
-  }
-}  
-/*add responsive design for mobilei in login page*/
-@media(max-width:600px){
-  .login-section{
-    padding:20px;
-  }
+  /*login page*/
   .login-card{
-    width:100%;
-    max-width: 100%;
-    padding: 25px 20px;
+    width:90%;
+    padding:25px;
   }
-  & h1{
-    font-size: 24px;
-  }
-  input{
-    padding:10px;
-    font-size: 14px;
-  }
-  button.btn-primary{
-    padding: 10px;
-    font-size: 15px;
-  }
-  .nav-logo img{
-    width:120px;
-    height:auto 
-  }
-}
-/*add responsive design for mobile in setting page*/
-@media(max-width:600px){
+  /*dashboard page*/
   .dashboard-body{
-    display: block;
+    flex-direction:column ;
   }
   .sidebar{
     width:100%;
     min-height: auto;
-    padding:15px 10px;
-    box-sizing: border-box;
-  }
-  .sidebar-logo{
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  sidebar nav ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:8px;
-    padding: 0;
-    margin:0;
-    list-style: none;
-  }
-  .sidebar nav ul li{
-    margin: 0;
-  }
-  .sidebar nav ul li a{
-    padding: 8px 10px;
-    display: block;
-    font-size: 14px;
-  }
-  .sidebar-logout{
-    margin-top: 15px;
-    text-align: center;
+    position: static;
   }
   .dashboard-main{
-    width: 100%;
+    margin-left: 0;
+    width:100%;
     padding:15px;
-    margin: 0;
-    box-sizing: border-box;
   }
-  .profile-section, .password-section, .business-section{
-    width:100%;
-    padding: 15px;
-    margin-bottom:15px;
-    box-sizing: border-box;
+  .topbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:15px;
   }
-  .form-group input{
-    width:100%;
-    padding:10px;
-    box-sizing: border-box;
+  .stats-row{
+    flex-direction: column;
   }
-  .btn-primary{
-    width:100%;
-    padding:10px;
+  .recent-invoices{
+    overflow-x: auto;
+  }
+  /*invoices page*/
+  .filter-bar{
+    flex-direction: column;
+    gap:10px;
   }
 }
