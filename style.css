@@ -61,7 +61,7 @@ nav {
   border: 2px solid #4f46e5;
   font-size: 14px;
   font-weight: 600;
-margin-left: 30px;
+  margin-left: 10px;
 }
 .btn-outline:hover {
   background-color: #4f46e5;
@@ -74,12 +74,13 @@ margin-left: 30px;
   border: 2px solid #4f46e5;
   font-size: 14px;
   font-weight: 600;
+  margin-left: 10px;
 }
 .btn-primary:hover {
   background-color: #4f46e5;
 }
 .hero-section {
-  background: linear-gradient();
+  background-color: linear-gradient();
   padding: 10px 10px 10px 10px;
 }
 .hero-content {
@@ -383,7 +384,7 @@ margin-bottom: 12px;
   }
 }
 .cta-section{
-  background-color: #B5BBC9;
+  background-color: #245F73;
   padding: 80px 24px;
   text-align: center;
    & h2{
@@ -415,7 +416,7 @@ margin-bottom: 12px;
   }
   }
   .footer{
-background-color: #b4c5e4;
+background-color: #dde9b9e1;
 padding: 10px 24px;
 color: white;
   }
@@ -434,7 +435,7 @@ color: white;
       font-size: 36px;
     }
     & a{
-      color: white;
+      color: black;
     display: block;
       margin-bottom: 12px;
       margin-left: 12px;
