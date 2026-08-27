@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Segoe UI", sans-serif;
-  color: #1e1b4b;
+  color: #6B7280;
   background: #f0f0f0;
 }
 a {
@@ -74,7 +74,7 @@ nav {
   border: 2px solid #4f46e5;
   font-size: 14px;
   font-weight: 600;
-  margin-left: 10px;
+  margin-left: 10px ;
 }
 .btn-primary:hover {
   background-color: #4f46e5;
@@ -104,12 +104,11 @@ nav {
   justify-content: center;
   align-items: center;
   height: 30px;
-
   border-radius: 20px;
 }
 h1 {
   font-size: larger;
-  color: #656569;
+  color: #111827;
   line-height: 5px;
    font-weight: bold;
   margin-bottom: 10px;
@@ -191,7 +190,7 @@ p {
   font-size: small;
 }
 .features-section {
-  background-color: white;
+  background-color: #dde1e6;
   padding: 80px 24px;
 }
 .features-header {
@@ -235,11 +234,6 @@ p {
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
-
-}
-.feature-card:hover{
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transform: translateY(-5px);
 }
 .feature-card h3{
 margin-bottom: 12px;
@@ -254,7 +248,7 @@ font-weight: 700;
 }
 /*How it works section*/
  .how-it-works{
-  background:#F8FAFC;
+  background:#dde1e6;
   padding: 80px 24px;
  }
    .how-it-work-header{
@@ -263,7 +257,7 @@ font-weight: 700;
     & h2{
       font-size: 36px;
       font-weight: 700;
-      color: #1E1B4B;
+      color: #111827;
       margin-bottom: 12px;
     }
     & p{
@@ -295,7 +289,7 @@ font-weight: 700;
   & h3{
     font-size: 20px;
 font-weight: 800;
-color: #1E1B4B;
+color: #111827;
 margin-bottom: 12px;
   }
 & p{
@@ -321,7 +315,7 @@ margin-bottom: 12px;
 
 }
 .testimonials-section{
-  background-color: lightgray;
+  background-color: #dde1e6;
   padding:80px 24px ;
 } 
 .testimonials-header{
@@ -331,7 +325,7 @@ margin-bottom: 12px;
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 12px;
-    color: #1E1B4B;
+    color: #111827;
   }
   & p{
     color: #656569;
@@ -353,6 +347,9 @@ margin-bottom: 12px;
   flex: 1;
   max-width: 350px;
   transition: all 0.3s ease;
+  &:hover{
+    transform: translateY(-8px);
+  }
 }
 .stars{
   margin-bottom: 20px;
@@ -376,7 +373,7 @@ margin-bottom: 12px;
   }
   & h4{
     font-size: bold;
-    color:#4f46e5;
+    color:#111827;
   }
   & p{
     color:#656569;
@@ -384,21 +381,21 @@ margin-bottom: 12px;
   }
 }
 .cta-section{
-  background-color: #245F73;
+  background-color: #312E81;
   padding: 80px 24px;
   text-align: center;
    & h2{
 font-size:36px ;
 font-weight: 800;
 margin-bottom: 12px;
-   color: white;
+   color: #111827;
 }
 & p{
   display: block;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  color:rgba(255,255,255,0.8);
+  color:white;
   font-size:16px ;
   margin-bottom: 20px;
 }
@@ -412,11 +409,11 @@ margin-bottom: 12px;
   font-size: large;
 }
   & a:hover{
-    background-color: #D6E6F2;
+    background-color: #4854dc;
   }
   }
   .footer{
-background-color: #dde9b9e1;
+background-color: #312E81;
 padding: 10px 24px;
 color: white;
   }
@@ -429,13 +426,13 @@ color: white;
   .footer-col{
     flex: 1;
     & h4{
-      color: black;
+      color: white;
       margin-bottom: 12px;
       font-weight: bold;
       font-size: 36px;
     }
     & a{
-      color: black;
+      color:white;
     display: block;
       margin-bottom: 12px;
       margin-left: 12px;
@@ -446,20 +443,25 @@ color: white;
     & img{
       width: auto;
       height: 40px;
-      background: transparent;}
+      background: transparent;
+    }
+    & p{
+      color: white;
+    }
   }
   .footer-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    border-top: 1px solid #334155;
+    border-top: 1px solid white;
     & p{
-      border-top: 1px solid #334155;
+      border-top: 1px solid white;
       padding-top: 20px;
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
+      color:white;
     }
    }
    /*login.html*/
@@ -547,7 +549,7 @@ button{
 .sidebar{
   width: 240px;
   min-height: 100vh;
-  background-color: #334155;
+  background-color: #312E81;
   padding: 24px;
   position: fixed;
   & nav ul{
@@ -581,7 +583,8 @@ button{
   margin-top: 40px;
   & a{
     color: #e5e7eb;;
-   opacity: 1;
+    border-radius: 8px;
+    box-shadow: 1px solid white;
   }
 }
 .dashboard-main{
@@ -603,7 +606,7 @@ align-items: center;
 margin-bottom: 30px;
 & a{
   background-color: #4f46e5;
-  border-radius:8px;
+  border-radius:12px;
   border: 100vh;
 }
 & h2{
@@ -616,7 +619,7 @@ margin-bottom: 30px;
   .profile-icon{
     width: 40px;
     height: 40px;
-    background-color: #4f46e5;
+    background-color: #312E81;
     border: radius 50%; 
     display: flex;
     justify-content: center;
@@ -652,8 +655,8 @@ margin-bottom: 30px;
 }
 .chart-placeholder{
   min-height: 220px;
-  background-color: white;
-  box-shadow: 1px solid #e2e8f0;
+  background-color: #eef2ee;
+  box-shadow: 1px solid #C7D2EF;
   border-radius: 12px;
   display:flex;
   align-items: center;
@@ -692,6 +695,9 @@ tr{
 td{
   padding:12px 20px;
   text-align: left;
+  & a{
+    color:#4f46e5
+  }
 }
 .status{
   padding:5px 10px;
@@ -710,6 +716,10 @@ td{
 .overdue{
   background:#fee2e2 ;
   color:#dc2626; 
+}
+.clients{
+  background-color: #c1bff0;
+  color: #312E81;
 }
 /*invoices.html*/ 
 .filter-bar{
