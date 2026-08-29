@@ -390,7 +390,7 @@ margin-bottom: 12px;
 font-size:36px ;
 font-weight: 800;
 margin-bottom: 12px;
-   color: #111827;
+   color: white;
 }
 & p{
   display: block;
@@ -511,9 +511,9 @@ color: white;
   color:#1e3a8a;
 }
  .form-group input{
-  /*display: block;
-  margin-bottom: 8px;*/
-  width:50%;
+  display: block;
+  margin-bottom: 8px;
+  width:70%;
   padding: 12px 14px;
   border: 1px solid #d0d5dd;
   box-sizing: border-box;
@@ -547,10 +547,10 @@ color: white;
     margin-bottom: 16px;
   }
   & nav ul li a{
-    color: black;
-    font-size: 15px;
-    opacity: 0.7;
-  }
+    color:#312E81;
+    font-size: 20px;
+    font-weight: 600;
+}
   & ul nav li a:hover{
     opacity:1;
   }
@@ -562,7 +562,7 @@ color: white;
     border-radius: 8px;
   }
   & a.active{
-    background-color: #b0b4d7;
+    background-color: #9ca0c3;
     color: #312E81;
   }
 }
@@ -579,7 +579,7 @@ color: white;
     transition: background-color 0.2s;
   }
   a:hover{
-    background-color:#b0b4d7 ;
+    background-color:#616693 ;
     color:#fff;
 }
 }
@@ -702,10 +702,10 @@ td{
     color:#312E81;
   }
 }
- th, td {
-  border:1px soild #000;
+ table, th, td, tr{
+  border:3px solid #312E81;
   padding:12px 20px;
-  
+  border-collapse:collapse;
 }
 .status{
   padding:5px 10px;
@@ -747,7 +747,7 @@ td{
   margin-bottom: 25px;
   border-radius:10px;
   color:#312E81;
-} 
+}  
 }
 /*Responsive Design of landing page for mobile*/
 @media (max-width:768px) {
