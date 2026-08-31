@@ -207,7 +207,7 @@ p {
 }
 .features-header p {
   font-size: 16px;
-  color: #64748b;
+  color: black;
 }
 .features-grid {
   display: flex;
@@ -245,7 +245,7 @@ font-weight: 700;
 }
 .feature-card p{
   line-height: 1.7;
-  color: #64748b;
+  color: black;
   font-size: 15px;
 }
 /*How it works section*/
@@ -258,13 +258,13 @@ font-weight: 700;
     margin-bottom: 50px;
     & h2{
       font-size: 36px;
-      font-weight: 700;
-      color: #111827;
+      font-weight: 800;
+      color: #1E1B4B;
       margin-bottom: 12px;
     }
     & p{
       font-size:16px ;
-      color: #64748b;
+      color: black;
     }
  }
  .steps-container{
@@ -297,7 +297,7 @@ margin-bottom: 12px;
 & p{
   line-height: 1.7;
   font-size: 15px;
-  color: #64748b;
+  color: black;
 }
   
 }
@@ -327,10 +327,10 @@ margin-bottom: 12px;
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 12px;
-    color: #111827;
+    color: #1E1B4B;
   }
   & p{
-    color: #656569;
+    color: black;
     font-size: 16px;
   }
 }
@@ -378,7 +378,7 @@ margin-bottom: 12px;
     color:#111827;
   }
   & p{
-    color:#656569;
+    color:black;
     font-size: small;
   }
 }
@@ -614,9 +614,9 @@ margin-bottom: 30px;
 }*/
 & h2{
   font-size:28px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 25px;
-  color:#0f1720;
+  color:#1E1B4B;
 }
   }
   .profile-icon{
@@ -692,7 +692,7 @@ th{
 tr{
   padding: 12px;
   font-size: 14px;
-  color:#1E1B4B;
+  color:black;
   border-bottom: 1px solid #e5e7eb;
 }
 td{
@@ -740,6 +740,27 @@ td{
   border-bottom: 1px solid #E2E8F0;
   font-weight: bold;
   gap:20px;
+  /*create-invoice.html*/
+  .invoice-form{
+    margin-bottom: 8px;
+    width:100%;
+  }
+  .invoice-form label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1E1B4B;
+  }
+  .invoice-form input{
+    color:#333;
+    display: block;
+  }
+  .invoice-form input:focus{
+    color:#1e3a8a;
+  }
+  .invoice-items h3{
+    color:#312E81;  
+  }
 /*settings.html*/
 .profile-section, .business-section, .Password-section{
   background: #fff;
