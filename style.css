@@ -507,13 +507,13 @@ color: white;
 .form-group label{
   display: block;
   margin-bottom: 6px;
-  font: weight 600px;;
+  font-weight: 600px;
   color:#1e3a8a;
 }
  .form-group input{
   display: block;
   margin-bottom: 8px;
-  width:70%;
+  width:60%;
   padding: 12px 14px;
   border: 1px solid #d0d5dd;
   box-sizing: border-box;
@@ -740,6 +740,7 @@ td{
   border-bottom: 1px solid #E2E8F0;
   font-weight: bold;
   gap:20px;
+}
   /*create-invoice.html*/
   .invoice-form{
     margin-bottom: 8px;
@@ -748,18 +749,30 @@ td{
   .invoice-form label{
     display: block;
     margin-bottom: 6px;
-    font-weight: 600;
+    font-weight: 600px;
     color: #1E1B4B;
   }
   .invoice-form input{
+    display:block;
+    margin-bottom: 8px;
+    width: 20%;
+    border: 1px solid #d0d5dd;
+    box-shadow: border-box;
+    border-radius: 8px;
+    font-size: 15px;
     color:#333;
-    display: block;
+    padding:12px 24px;
+    transition: border-color 0.2s;
+    outline:noe;
   }
   .invoice-form input:focus{
-    color:#1e3a8a;
+    border-color:#2563eb;
   }
   .invoice-items h3{
     color:#312E81;  
+  }
+  .invoice-summary h3{
+color:#312E81;
   }
 /*settings.html*/
 .profile-section, .business-section, .Password-section{
@@ -769,7 +782,7 @@ td{
   border-radius:10px;
   color:#312E81;  
 }  
-}
+
 /*Responsive Design of landing page for mobile*/
 @media (max-width:768px) {
   header{
@@ -891,5 +904,12 @@ width:100%;
   .filter-bar{
     flex-direction: column;
     gap:10px;
+  }
+  .invoice-form input{
+    width:90%;
+    padding:25px;
+  }
+  .invoice-items{
+    overflow-x: auto;
   }
 }
