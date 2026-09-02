@@ -18,22 +18,12 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   padding: 1rem 2rem;
   background:#ffffff;
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-.logo {
-  width: 40px;
-  height: 30px;
-  border-radius: 40px;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
 }
 nav {
   background-color: #ffffff;
@@ -45,10 +35,12 @@ nav {
 .nav-links ul {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   list-style: none;
   font-weight: 500;
   gap: 24px;
-  margin-left: 500px;
+  margin-right: 500px;
+  gap:200px;
 }
 .nav-links a:hover {
   color:#312E81;
@@ -63,6 +55,7 @@ nav {
   font-weight: 600;
   margin-left: 10px;
   cursor: pointer;
+  gap:20px;
 }
 .btn-outline:hover {
   background-color: #1a185c;
@@ -77,6 +70,7 @@ nav {
   font-weight: 600;
   margin-top: 10px ;
   cursor:pointer;
+  gap:100px;
 }
 .btn-primary:hover {
   background-color: #1a185c;
@@ -456,9 +450,7 @@ color: white;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    border-top: 1px solid white;
     & p{
-      border-top: 1px solid white;
       padding-top: 20px;
       margin-top: 20px;
       display: flex;
@@ -529,10 +521,469 @@ color: white;
   .form-group input::placeholder{
     color:#98a2b3;
   }
-/*dashboard.html*/
-.dashboard-body{
-  display: flex;
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-body {
+  background-color: #f8fafc;
+  display: flex;
+  min-height: 100vh;
+  color: #1e1b4b;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #312e81;
+  padding: 25px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-logo {
+  margin-bottom: 45px;
+}
+
+.sidebar-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.sidebar nav ul li a.active {
+  background-color: white;
+  color: #312e81;
+}
+
+.sidebar-logout {
+  margin-top: 45px;
+}
+
+.sidebar-logout a {
+  display: inline-block;
+  background-color: white;
+  color: #312e81;
+  padding: 10px 22px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.sidebar-logout a:hover {
+  background-color: #e0e7ff;
+}
+
+
+/* MAIN */
+
+.dashboard-main {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 30px;
+}
+
+
+/* TOPBAR */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.welcome-text {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.topbar h2 {
+  font-size: 28px;
+  color: #1e1b4b;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notification {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.profile-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #312e81;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+/* STAT CARDS */
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+.stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stat-icon {
+  font-size: 20px;
+}
+
+.stat-card h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+  color: #1e1b4b;
+}
+
+.change {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.change span {
+  color: #94a3b8;
+  font-weight: normal;
+}
+
+.positive {
+  color: #16a34a;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+
+/* STATUS */
+
+.status {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.paid {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.pending {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.overdue {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.clients {
+  background-color: #e0e7ff;
+  color: #312e81;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-heading h3 {
+  font-size: 19px;
+  color: #1e1b4b;
+  margin-bottom: 5px;
+}
+
+.section-heading p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.section-heading select {
+  padding: 9px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: white;
+  color: #475569;
+}
+
+
+/* REVENUE */
+
+.revenue-section {
+  margin-bottom: 25px;
+}
+
+.chart-box {
+  background-color: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  padding: 25px 25px 15px;
+  display: flex;
+  min-height: 330px;
+}
+
+.chart-values {
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.chart {
+  position: relative;
+  flex: 1;
+  height: 270px;
+}
+
+.chart svg {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  left: 0;
+  top: 0;
+}
+
+.chart-line {
+  fill: none;
+  stroke: #312e81;
+  stroke-width: 4;
+}
+
+.area {
+  fill: url(#areaGradient);
+}
+
+.grid-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.line1 {
+  top: 0;
+}
+
+.line2 {
+  top: 38px;
+}
+
+.line3 {
+  top: 76px;
+}
+
+.line4 {
+  top: 114px;
+}
+
+.line5 {
+  top: 152px;
+}
+
+.line6 {
+  top: 190px;
+}
+
+.months {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+
+/* RECENT INVOICES */
+
+.recent-invoices {
+  background-color: white;
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+.view-all {
+  text-decoration: none;
+  color: #312e81;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 14px 12px;
+  font-size: 12px;
+  color: #64748b;
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+td {
+  padding: 15px 12px;
+  font-size: 14px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+td a {
+  color: #312e81;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background-color: #fafaff;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .sidebar {
+    width: 75px;
+    padding: 20px 10px;
+  }
+
+  .sidebar-logo img {
+    width: 50px;
+  }
+
+  .sidebar nav ul li a span {
+    display: none;
+  }
+
+  .sidebar nav ul li a {
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .sidebar-logout a {
+    font-size: 0;
+    padding: 12px;
+  }
+
+  .sidebar-logout a::after {
+    content: "↪";
+    font-size: 18px;
+  }
+
+  .dashboard-main {
+    margin-left: 75px;
+    width: calc(100% - 75px);
+    padding: 20px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar h2 {
+    font-size: 21px;
+  }
+
+}
+/*dashboard.html
+.body{
+  display: flex;
+}dashboard
 .sidebar{
   width: 240px;
   min-height: 100vh;
@@ -611,7 +1062,7 @@ margin-bottom: 30px;
 /*a:hover{
   color:white;
   background-color: #312E81;
-}*/
+}
 & h2{
   font-size:28px;
   font-weight: 800;
