@@ -1,4 +1,4 @@
-<!--<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <link rel="icon" href="favicon.jpeg" />
@@ -9,11 +9,6 @@
   </head>
   <body class="dashboard-body">
     <aside class="sidebar">
-      <div class="sidebar-logo">
-        <a href="index.html">
-          <img src="logo.png.jpeg" alt="invoicify logo" />
-        </a>
-      </div>
       <nav>
         <ul>
           <li><a href="#" class="active">Dashboard</a></li>
@@ -55,269 +50,41 @@
       <div class="chart-placeholder">Chart Coming Soon</div>
       <div class="recent-invoices">
         <h3>Recent Invoices</h3>
-        <table>-->
-<!--<thead>-->
-<!-- <tr>
-            <th>Invoice #</th>
-            <th>Client</th>
-            <th>Amount</th>
-            <th>Status</th>
-            <th>Action</th>
-          </tr>
-          </thead>-->
-<!--<tbody>-->
-<!--<tr>
-            <td>#INV-001</td>
-            <td>Sara Khan</td>
-            <td>$1,200</td>
-            <td><span class="status paid">paid</span></td>
-            <td><a href="#">View</a></td>
-          </tr>
-          <tr>
-            <td>#INV-002</td>
-            <td>John Ahmad</td>
-            <td>$800</td>
-            <td><span class="status pending">pending</span></td>
-            <td><a href="#">View</a></td>
-          </tr>
-          <tr>
-            <td>#INV-003</td>
-            <td>Rita Mailk</td>
-            <td>$1,500</td>
-            <td><span class="status overdue">overdue</span></td>
-            <td><a href="#">View</a></td>
-          </tr>
-          </tbody>-->
-<!-- </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Invoice #</th>
+              <th>Client</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#INV-001</td>
+              <td>Sara Khan</td>
+              <td>$1,200</td>
+              <td><span class="status paid">paid</span></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>#INV-002</td>
+              <td>John Ahmad</td>
+              <td>$800</td>
+              <td><span class="status pending">pending</span></td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>#INV-003</td>
+              <td>Rita Mailk</td>
+              <td>$1,500</td>
+              <td><span class="status overdue">overdue</span></td>
+              <td><a href="#">View</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </main>
-  </body>
-</html>-->
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.jpeg" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Dashboard - Invoicify</title>
-  </head>
-
-  <body class="dashboard-body">
-    <aside class="sidebar">
-      <div class="sidebar-logo">
-        <a href="index.html">
-          <img src="logo.png.jpeg" alt="Invoicify Logo" />
-        </a>
-      </div>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="#" class="active">⌂ <span>Dashboard</span></a>
-          </li>
-          <li>
-            <a href="clients.html">♙ <span>Clients</span></a>
-          </li>
-          <li>
-            <a href="invoices.html">▤ <span>Invoices</span></a>
-          </li>
-          <li>
-            <a href="settings.html">⚙ <span>Settings</span></a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="sidebar-logout">
-        <a href="#">Logout</a>
-      </div>
-    </aside>
-
-    <main class="dashboard-main">
-      <!-- TOPBAR -->
-      <header class="topbar">
-        <div>
-          <p class="welcome-text">Dashboard</p>
-          <h2>Good Morning, Alex 👋</h2>
-        </div>
-
-        <div class="topbar-right">
-          <button class="notification">🔔</button>
-          <div class="profile-icon">A</div>
-        </div>
-      </header>
-
-      <!-- STAT CARDS -->
-      <section class="stats-row">
-        <div class="stat-card">
-          <div class="stat-top">
-            <span class="status paid">Total Earned</span>
-            <span class="stat-icon">💰</span>
-          </div>
-          <h3>$24,500</h3>
-          <p class="change positive">↗ 12.5% <span>this month</span></p>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-top">
-            <span class="status pending">Pending</span>
-            <span class="stat-icon">⏳</span>
-          </div>
-          <h3>$6,200</h3>
-          <p class="change negative">↘ 4.2% <span>this month</span></p>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-top">
-            <span class="status overdue">Overdue</span>
-            <span class="stat-icon">⚠</span>
-          </div>
-          <h3>$1,400</h3>
-          <p class="change negative">↗ 2.1% <span>this month</span></p>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-top">
-            <span class="status clients">Clients</span>
-            <span class="stat-icon">👥</span>
-          </div>
-          <h3>18</h3>
-          <p class="change positive">↗ 8.4% <span>this month</span></p>
-        </div>
-      </section>
-
-      <!-- REVENUE CHART -->
-      <section class="revenue-section">
-        <div class="section-heading">
-          <div>
-            <h3>Revenue Overview</h3>
-            <p>Track your income over time</p>
-          </div>
-
-          <select>
-            <option>Last 7 Months</option>
-            <option>Last 30 Days</option>
-            <option>This Year</option>
-          </select>
-        </div>
-
-        <div class="chart-box">
-          <div class="chart-values">
-            <span>$30k</span>
-            <span>$25k</span>
-            <span>$20k</span>
-            <span>$15k</span>
-            <span>$10k</span>
-            <span>$5k</span>
-            <span>$0</span>
-          </div>
-
-          <div class="chart">
-            <div class="grid-line line1"></div>
-            <div class="grid-line line2"></div>
-            <div class="grid-line line3"></div>
-            <div class="grid-line line4"></div>
-            <div class="grid-line line5"></div>
-            <div class="grid-line line6"></div>
-
-            <svg viewBox="0 0 700 250" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#312E81" stop-opacity=".20" />
-                  <stop offset="100%" stop-color="#312E81" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-
-              <path
-                class="area"
-                d="M0 190
-                 C50 160 70 170 110 130
-                 C150 90 180 150 220 135
-                 C260 120 270 55 320 70
-                 C370 85 390 155 430 125
-                 C470 95 490 60 530 75
-                 C570 90 600 150 640 115
-                 C665 95 680 105 700 80
-                 L700 250 L0 250 Z"
-              />
-
-              <path
-                class="chart-line"
-                d="M0 190
-                 C50 160 70 170 110 130
-                 C150 90 180 150 220 135
-                 C260 120 270 55 320 70
-                 C370 85 390 155 430 125
-                 C470 95 490 60 530 75
-                 C570 90 600 150 640 115
-                 C665 95 680 105 700 80"
-              />
-            </svg>
-
-            <div class="months">
-              <span>Jan</span>
-              <span>Feb</span>
-              <span>Mar</span>
-              <span>Apr</span>
-              <span>May</span>
-              <span>Jun</span>
-              <span>Jul</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- RECENT INVOICES -->
-      <section class="recent-invoices">
-        <div class="section-heading">
-          <div>
-            <h3>Recent Invoices</h3>
-            <p>Latest invoice activity</p>
-          </div>
-
-          <a href="invoices.html" class="view-all">View All →</a>
-        </div>
-
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Invoice #</th>
-                <th>Client</th>
-                <th>Amount</th>
-                <th>Status</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>#INV-001</td>
-                <td>Sara Khan</td>
-                <td>$1,200</td>
-                <td><span class="status paid">Paid</span></td>
-                <td><a href="#">View</a></td>
-              </tr>
-
-              <tr>
-                <td>#INV-002</td>
-                <td>John Ahmad</td>
-                <td>$800</td>
-                <td><span class="status pending">Pending</span></td>
-                <td><a href="#">View</a></td>
-              </tr>
-
-              <tr>
-                <td>#INV-003</td>
-                <td>Rita Malik</td>
-                <td>$1,500</td>
-                <td><span class="status overdue">Overdue</span></td>
-                <td><a href="#">View</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
     </main>
   </body>
 </html>
