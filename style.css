@@ -24,13 +24,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+
 }
-.header nav{
+header nav{
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding:16px 24px;
+  align-items: left;
+
+ /* margin-left: 20px;*/
 }
 .nav-links ul {
   display: flex;
@@ -39,11 +41,29 @@ header {
   list-style: none;
   font-weight: 500;
   gap: 24px;
-  margin-right: 500px;
-  gap:200px;
+
+}
+.nav-links a {
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap:1000px;
 }
 .nav-links a:hover {
   color:#312E81;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  padding:12px 24px;
+  margin-left: 500px;
+  justify-content: space-between;
+  margin-bottom:20px;
+
 }
 .btn-outline {
   background-color:#312E81;
@@ -55,7 +75,7 @@ header {
   font-weight: 600;
   margin-left: 10px;
   cursor: pointer;
-  gap:20px;
+  
 }
 .btn-outline:hover {
   background-color: #1a185c;
@@ -68,16 +88,17 @@ header {
   border: 2px solid #4f46e5;
   font-size: 14px;
   font-weight: 600;
-  margin-top: 10px ;
+  margin-left: 10px ;
   cursor:pointer;
-  gap:100px;
+
 }
 .btn-primary:hover {
   background-color: #1a185c;
 }
 .hero-section {
-  background-color: linear-gradient();
+  background-color: linear-gradient(135deg, #F8FAFC 0%, #EEF2FF 100%);
   padding: 10px 10px 10px 10px;
+  margin-bottom:20px;
 }
 .hero-content {
   display: flex;
@@ -105,7 +126,7 @@ header {
 h1 {
   font-size: larger;
   color: #111827;
-  line-height: 5px;
+  line-height: 1.2px;
    font-weight: bold;
   margin-bottom: 10px;
   margin-top: 20px;
@@ -113,7 +134,7 @@ h1 {
 p {
   font-size: large;
   color: black;
-  line-height: 50px;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 .hero-cta {
@@ -141,7 +162,7 @@ p {
   width: 100%;
   max-width: 560px;
   border-radius: 100%;
-  box-shadow: #000000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 .hero-right img{
   animation: float 3s ease-in-out;
@@ -214,7 +235,7 @@ p {
   background-color: white;
   border-radius: 16px;
   padding:40px 30px;
-  box-shadow: 0px 4px 20px  rgba(0,0,0,0,0.08);
+  box-shadow: 0px 4px 20px  rgba(0,0,0,0.08);
   text-align: center;
   flex: 1;
   max-width: 300px;
@@ -393,16 +414,16 @@ margin-bottom: 12px;
   gap: 8px;
   color:white;
   font-size:16px ;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 & a{
   background-color: white;
   color: black;
-  padding: 14px 32px;
+  padding: 12px 24px;
   border-radius: 8px;
   border: none;
   font-weight: 700;
-  font-size: large;
+  font-size: 20px;
 }
   & a:hover{
     background-color: #1e3a8a;
@@ -807,15 +828,13 @@ color:#312E81;
 
 /*Responsive Design of landing page for mobile*/
 @media (max-width:768px) {
-  header{
-    padding:15px;
+  header nav{
+    flex-wrap: wrap;
+    padding:12px 16px;
   }
    nav{
     width: 100%;
    }
-   .logo{
-    margin-left:0 auto;
-  }
   .nav-links ul {
     flex-direction: column;
     padding:10px 0px;
@@ -830,7 +849,7 @@ color:#312E81;
   }
   .btn-outline, .btn-primary{
     margin-left: 0;
-    padding:8px 12px;
+    padding:8px 14px;
     }
     /*hero-section*/
   .hero-content {
