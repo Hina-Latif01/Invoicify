@@ -417,6 +417,9 @@ margin-bottom: 12px;
   /*margin-bottom: 20px;*/
 }
 & a{
+  display: inline-block;
+  width:fit-content;
+  margin-top: 12px;
   background-color: white;
   color: black;
   padding: 12px 24px;
@@ -564,9 +567,11 @@ color: white;
     color:white;
     font-size: 20px;
     font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
   & ul nav li a:hover{
-    opacity:1;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
   }
   & a{
     display: block;
@@ -574,12 +579,14 @@ color: white;
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     gap:20px;
   }
   & a.active{
     background-color: #9ca0c3;
     color: #312E81;
+    font-weight:700;
+    box-shadow: 0 2px 8px  rgba(0,0,0,0.15);
   }
 .sidebar-logout{
   margin-top: 40px;
@@ -615,6 +622,11 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-bottom: 30px;
+position: sticky;
+top: 0;
+z-index: 100;
+padding:16px 0;
+background-color: #F8FAFC;
 & a{
   background-color: #312E81;
   color:white;
@@ -635,15 +647,16 @@ margin-bottom: 30px;
 }
   }
   .profile-icon{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-color: #312E81;
-    border: radius 50%; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: bold;
+    font-size: 40px;
    }
    .stats-row{
     display: grid;
@@ -657,6 +670,22 @@ margin-bottom: 30px;
     border-radius: 12px;
     flex:1;
     border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: #312E81;
+    }
     & p{
       font-size: 13px;
       margin-bottom: 8px;
@@ -681,6 +710,8 @@ margin-bottom: 30px;
   justify-content: center;
   color:#94a3b8;
   margin-top: 15px;
+  background: repeating-linear-gradient(45deg,#eef2ee,#eef2ee 10px,#e6ebe6 10px,#e6ebe6 20px);
+  border: 1px dashed #C7D2EF;
 }
 .recent-invoices{
 background-color: white;
@@ -758,7 +789,7 @@ table, th, td{
 }
 .paid{
   background: #dcfce7;
-  color:#15803d;
+  color:#158043;
 }
 .pending{
   background: #fef3cf;
