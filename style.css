@@ -51,7 +51,6 @@ header nav{
   margin-left: 100px;
   display: flex;
   justify-content: space-between;
-  gap:1000px;
 }
 .nav-links a:hover {
   color:#312E81;
@@ -60,9 +59,8 @@ header nav{
   display: flex;
   gap: 10px;
   padding:12px 24px;
-  margin-left: 500px;
+margin-left: 500px;
   justify-content: space-between;
-  margin-bottom:20px;
 
 }
 .btn-outline {
@@ -507,7 +505,11 @@ color: white;
     }
     & p{
       color: #334155;
-      margin-bottom: 25px;
+      /*margin-bottom: 25px;*/
+    }
+    & a{;
+      color: #312E81;
+      font-weight: 600;
     }
    }
 .form-group{
@@ -558,14 +560,19 @@ color: white;
   & nav ul{
     list-style: none;
     margin-top: 40px;
+    margin-left: 0;
   }
-  }
+  
   & nav ul li{
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    padding-left: 0;
   }
   & nav ul li a{
+    display: inline-block;
     color:white;
-    font-size: 20px;
+    padding:8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
     font-weight: 600;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -573,21 +580,13 @@ color: white;
     background-color: rgba(255, 255, 255, 0.1);
     color:white;
   }
-  & a{
-    display: block;
-    padding:12px 15px;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    /*margin-top: 15px;*/
-    gap:20px;
-  }
   & a.active{
     background-color: #9ca0c3;
     color: #312E81;
     font-weight:700;
     box-shadow: 0 2px 8px  rgba(0,0,0,0.15);
   }
+}
 .sidebar-logout{
   margin-top: 40px;
   & a{
@@ -804,16 +803,24 @@ table, th, td{
   color: #312E81;
 }
 /*invoices.html*/ 
-.filter-bar{
+.filter-bar {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 15px;
+  padding: 8px 0;
   font-size:20px;
-  color: #312E81;
-  border-bottom: 1px solid #E2E8F0;
-  font-weight: bold;
+  margin-bottom: 20px;
   gap:20px;
+  & a{
+    color: #312E81;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  &:hover{
+    color: #1E1B4B;
+    text-decoration: underline;
+  }
 }
   /*create-invoice.html*/
   .invoice-form{
@@ -859,7 +866,14 @@ color:#312E81;
 
 /*Responsive Design of landing page for mobile*/
 @media (max-width:768px) {
+  header{
+    flex-direction: column;
+    gap:15px;
+    padding: 15px;
+  }
   header nav{
+    width:100%;
+    justify-content: center;
     flex-wrap: wrap;
     padding:12px 16px;
   }
@@ -869,18 +883,21 @@ color:#312E81;
   .nav-links ul {
     flex-direction: column;
     padding:10px 0px;
-    gap: 15px;
+    gap: 12px;
     margin-bottom: 0;
     justify-content: center;
     flex-wrap: wrap;
   }
   .buttons{
     display: flex;
-    gap: 10px;
+    margin-left: 0;
+    padding: 0;
+    gap: 8px;
   }
   .btn-outline, .btn-primary{
     margin-left: 0;
-    padding:8px 14px;
+    padding:5px 10px;
+    margin-bottom: 20px;
     }
     /*hero-section*/
   .hero-content {
