@@ -412,7 +412,6 @@ margin-bottom: 12px;
   gap: 8px;
   color:white;
   font-size:16px ;
-  /*margin-bottom: 20px;*/
 }
 & a{
   display: inline-block;
@@ -505,7 +504,6 @@ color: white;
     }
     & p{
       color: #334155;
-      /*margin-bottom: 25px;*/
     }
     & a{;
       color: #312E81;
