@@ -455,7 +455,7 @@ color: white;
       margin-left: 12px;
     }
     & a:hover{
-      color:#4f46e5;
+      color:black;
     }
     & img{
       width: auto;
